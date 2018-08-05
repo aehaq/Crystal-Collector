@@ -1,0 +1,59 @@
+HTML
+
+setup the following:
+
+	Game Title (static)
+
+	Instruction Text Area (static)
+
+	Randomized goalnumber (dynamic)
+
+	Win Counter (dynamic)
+
+	Loss Counter (dynamic)
+
+	buttons (dynamic) x 4 (require unique values)
+
+	score Counter (dynamic)
+
+JavaScript
+
+create the following variables:
+	-goalNumber;
+	-winCount of 0
+	-lossCount of 0
+	-scoreCount;
+
+Create the following functions:
+	- randomizeButton(button-id for argument):
+		create variable randomVal
+		set randomval equal to random number from 1 to 12
+		assign randomval to be value of (button-id)
+	- setGoal:
+		set goalNumber equal to random number from 19-120
+		print goalNumber on page
+
+	-initialize:
+		run randomizebutton (button 1)
+		run randomizeButton (button 2)
+		run randomizebutton (button 3)
+		run randomizebutton (button 4)
+		run setGoal()
+		set scoreCount 0;
+		print on page winCount;
+		print on page lossCount;
+		print on page scoreCount;
+
+run initialize function
+
+on click of any button
+	scoreCount = scoreCount + this button's value
+	if scoreCount is less than goalNumber
+		print on page scoreCount
+	else if scoreCount is equal to goalNumber
+		winCount = winCount + 1
+		run initialize
+	else if scoreCount is greater than goalNumber
+		lossCount = lossCount + 1
+		run initialize
+	
