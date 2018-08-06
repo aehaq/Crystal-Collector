@@ -1,0 +1,35 @@
+
+
+.btn {
+    height: 75px;
+    width: 100px;
+    background: transparent;
+}
+
+#button-1 {
+    background-image: url("../images/emerald.png");
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#button-2 {
+    background-image: url("../images/ruby.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#button-3 {
+    background-image: url("../images/sapphire.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#button-4 {
+    background-image: url("../images/topaz.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
