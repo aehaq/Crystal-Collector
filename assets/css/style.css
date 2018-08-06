@@ -2,6 +2,21 @@ body {
     background-image: url("../images/background.jpg");
 }
 
+.jumbotron-fluid {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.score-card {
+    box-sizing: border-box;
+    width: 350px;
+}
+
+.w-l-card {
+    box-sizing: border-box;
+    width: 170px;
+}
+
 .btn {
     height: 75px;
     width: 100px;

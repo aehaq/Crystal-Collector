@@ -19,7 +19,7 @@ $(document).ready(function () {
     }
 
     //Function used to initialize game. 
-    //Resets goal and randomize button using above function, and prints all necessary current values. 
+    //Resets goal and randomize button using above functions, and prints all necessary current values. 
     function initialize() {
         for (var i = 1; i < 5; i++) {
             randomizeButton($("#button-"+i));
