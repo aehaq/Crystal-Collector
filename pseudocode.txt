@@ -29,6 +29,7 @@ Create the following functions:
 		create variable randomVal
 		set randomval equal to random number from 1 to 12
 		assign randomval to be value of (button-id)
+		
 	- setGoal:
 		set goalNumber equal to random number from 19-120
 		print goalNumber on page
