@@ -11,31 +11,59 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Crystal Collector!</h1>
 
-    <div class="instructions">
-        <p>You will be given a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to a random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time the game starts, the values of each crystal will change.</p>
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+        <div class="container">
+            <h1 class="display-4 text-center">Crystal Collector!</h1>
+            <hr class="my-2">
+            <p class="lead">You will be given a random number at the start of the game.
+            <br>
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+            <br> 
+            You win the game by matching your total score to a random number.
+            <br>
+            The value of each crystal is hidden from you until you click on it. Each time the game starts, the values of each crystal will change.</p>
+            <hr class="my-2">
+            <h3 class="text-center">Your Point goal:</h5>
+            <h1 class="text-center mb-0 p-0" id="goal"></h1>
+        </div>
     </div>
 
-    <div class="goal-card">
-        <h1 id="goal"></h1>
-    </div>
-    <div class="point-card">
-        <h2> Wins: <span id="wins"></span></h2>
-        <h2> losses: <span id="losses"></span></h2>
-    </div>
-    <div class="button-card">
+    <div class="d-flex justify-content-center m-5">
         <button id="button-1" class="btn" value=""></button>
         <button id="button-2" class="btn" value=""></button>
         <button id="button-3" class="btn" value=""></button>
         <button id="button-4" class="btn" value=""></button>
     </div>
-    <div class="score-card">
-        <h1> Total Score: <span id="score"></span> </h1>
+
+    <div class="d-flex justify-content-center m-5">
+        <div class="card bg-dark text-white m-10 h-100" style="max-width: 20rem;">
+        <div class="card-body">
+            <h1 class="card-title"> Total Score: <span id="score"></span> </h1>
+        </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center m-3">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-dark m-10 h-100 text-white" style="max-width: 20rem;">
+                <div class="card-body">
+                    <h1 class="card-title text-success"> Wins </h1>
+                    <h2 class="card-text text-center"><span id="wins"></span></h2>
+                </div>
+                </div>
+            </div>
+            <div class="col"></div>
+            <div class="col">
+                <div class="card bg-dark m-10 h-100 text-white" style="max-width: 20rem;">
+                <div class="card-body">
+                    <h1 class="card-title text-danger">Losses</h1>
+                    <h2 class="card-text text-center"><span id="losses"></span></h2>
+                </div>
+                </div>
+            </div>    
+        </div>
     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

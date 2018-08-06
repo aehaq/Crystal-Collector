@@ -1,4 +1,6 @@
-
+body {
+    background-image: url("../images/background.jpg");
+}
 
 .btn {
     height: 75px;
